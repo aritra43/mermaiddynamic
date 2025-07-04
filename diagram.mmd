@@ -1,0 +1,19 @@
+graph LR
+    A[Start] --> B{Input Operand 1};
+    B --> C{Input Operator};
+    C --> D{Input Operand 2};
+    D --> E{Perform Calculation};
+    E --> F{Display Result};
+    F --> G[End];
+    subgraph "Error Handling"
+        E -- Error --> H{Handle Error};
+        H --> G;
+    end
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#ccf,stroke:#333,stroke-width:2px
+    style C fill:#ccf,stroke:#333,stroke-width:2px
+    style D fill:#ccf,stroke:#333,stroke-width:2px
+    style E fill:#ccf,stroke:#333,stroke-width:2px
+    style F fill:#ccf,stroke:#333,stroke-width:2px
+    style G fill:#ccf,stroke:#333,stroke-width:2px
+    style H fill:#ccf,stroke:#333,stroke-width:2px
